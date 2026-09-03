@@ -12,9 +12,23 @@ h1 {
 }
 
 .grid-container {
-    width: 750px;
-    height: 750px;
+    width: 500px;
+    height: 500px;
     flex: 0 0 auto;
     display: flex;
+    flex-direction: row;
 }
 
+.row-div {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.grid {
+    flex-grow: 1;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: black;
+    margin: 2px;
+}
