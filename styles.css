@@ -6,6 +6,10 @@ h1 {
     text-align: center;
 }
 
+p {
+    text-align: center;
+}
+
 button {
     text-align: center;
     display: block;
@@ -23,6 +27,8 @@ button {
     flex: 0 0 auto;
     display: flex;
     flex-direction: row;
+    border: 3px solid black;
+    box-shadow: 3px 3px black;
 }
 
 .row-div {

@@ -3,6 +3,8 @@ createSquareGrids(16);
 
 function createSquareGrids(noOfRows) {
     gridContainer.innerHTML = "";
+    const showGridSize = document.querySelector(".show-grid-size");
+    showGridSize.textContent = `Current Size is ${noOfRows} x ${noOfRows}`;
     for (let i = 0; i < noOfRows; i++) {
         const rowDiv = document.createElement("div");
         rowDiv.classList.add("row-div");
