@@ -6,6 +6,12 @@ h1 {
     text-align: center;
 }
 
+button {
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+}
+
 .flex-container {
     display: flex;
     justify-content: center;
@@ -29,6 +35,5 @@ h1 {
     flex-grow: 1;
     min-width: 10px;
     min-height: 10px;
-    background-color: black;
-    margin: 2px;
+    background-color: white;
 }

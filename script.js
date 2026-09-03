@@ -13,21 +13,22 @@ function createSquareGrids(noOfRows) {
             rowDiv.appendChild(div);
         }
     }
+    const grids = document.querySelectorAll(".grid");
+    addRandomColor(grids);
 }
-let grids = document.querySelectorAll(".grid");
-grids.forEach((grid) => {
-    grid.addEventListener("mouseover", () => addColor(getRandomColorCode(), getRandomColorCode(), getRandomColorCode(), grid));
-});
 
+function addRandomColor(grids){
+    grids.forEach((grid) => {
+        grid.addEventListener("mouseover", () => addColor(getRandomColorCode(), getRandomColorCode(), getRandomColorCode(), grid));
+    });
+}
 
 const gridButton = document.querySelector("#set-grid");
 gridButton.addEventListener("click", () => {
     let noOfGrids = prompt("Enter the number of grids? 2-32");
     createSquareGrids(noOfGrids);
-    grids = document.querySelectorAll(".grid");
-    grids.forEach((grid) => {
-        grid.addEventListener("mouseover", () => addColor(getRandomColorCode(), getRandomColorCode(), getRandomColorCode(), grid));
-    });
+    
+    
 });
 
 
